@@ -13,6 +13,7 @@
 		CC206E4E29C35F88004BCA50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC206E4C29C35F88004BCA50 /* Main.storyboard */; };
 		CC206E5029C35F8C004BCA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC206E4F29C35F8C004BCA50 /* Assets.xcassets */; };
 		CC206E5329C35F8C004BCA50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC206E5129C35F8C004BCA50 /* LaunchScreen.storyboard */; };
+		CC206E6129C36FFE004BCA50 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC206E6029C36FFE004BCA50 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC206E6129C36FFE004BCA50 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TetsAppIn;
+			packageProductDependencies = (
+				CC206E6029C36FFE004BCA50 /* SnapKit */,
+			);
 			productName = TetsAppIn;
 			productReference = CC206E4329C35F88004BCA50 /* TetsAppIn.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = CC206E3A29C35F88004BCA50;
+			packageReferences = (
+				CC206E5F29C36FFE004BCA50 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = CC206E4429C35F88004BCA50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC206E5F29C36FFE004BCA50 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC206E6029C36FFE004BCA50 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC206E5F29C36FFE004BCA50 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC206E3B29C35F88004BCA50 /* Project object */;
 }
